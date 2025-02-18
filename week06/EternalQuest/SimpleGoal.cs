@@ -10,7 +10,6 @@ public class SimpleGoal : Goal
 
     public override void RecordEvent()
     {
-        // Marcar el objetivo como cumplido
         _isComplete = true;
     }
 
@@ -26,14 +25,12 @@ public class SimpleGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        // Return a string representation of the SimpleGoal
         string status = _isComplete ? "[ X ]" : "[ ]";
         return $"SimpleGoal|{GetShortName()}|{GetDescription()}|{GetPoints()}|{status}";
     }
 
     public override string GetDetailsString()
     {
-        // Return a detailed string representation of the SimpleGoal
         string status = _isComplete ? "[ X ]" : "[ ]";
         return $"SimpleGoal: {status} {GetShortName()} - {GetDescription()} ({GetPoints()} points)";
     }

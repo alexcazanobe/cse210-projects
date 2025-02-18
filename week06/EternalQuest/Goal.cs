@@ -28,7 +28,7 @@ public abstract class Goal
 
     public virtual void SetCompletionStatus(bool isComplete)
     {
-        // Default implementation (if any)
+        
     }
 
     public abstract void RecordEvent();
